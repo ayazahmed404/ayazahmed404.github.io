@@ -1,11 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Not Here</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Centered Text with Button</title>
+<style>
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+  }
+  .content {
+    text-align: center;
+    color: black;
+  }
+  .blue {
+    color: blue;
+  }
+  .button {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+  }
+</style>
 </head>
 <body>
-    <h1>He's not here</h1>
+
+<div class="content">
+  <p>Hi, my name is <span class="blue">Ayaaz</span>.</p>
+  <button class="button">Contact Me</button>
+</div>
+
 </body>
-  </html>
+</html>
