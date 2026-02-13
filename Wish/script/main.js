@@ -1,5 +1,6 @@
+// Animation Timeline
 const animationTimeline = () => {
-  // Spit chars that need to be animated individually
+  // Spit chars that needs to be animated individually
   const textBoxChars = document.getElementsByClassName("hbd-chatbox")[0];
   const hbd = document.getElementsByClassName("wish-hbd")[0];
 
@@ -262,6 +263,14 @@ const animationTimeline = () => {
       "+=1"
     );
 
+  // Disable the animation for "Happy Valentine's Day"
+  const disableAnimationForValentine = () => {
+    document.querySelector(".three").style.opacity = "1";
+    document.querySelector(".three").style.transform = "none";
+  };
+  
+  disableAnimationForValentine();
+
   // Restart Animation on click
   const replyBtn = document.getElementById("replay");
   replyBtn.addEventListener("click", () => {
@@ -272,6 +281,7 @@ const animationTimeline = () => {
 // Run fetch and animation in sequence
 const resolveFetch = () => {
   return new Promise((resolve, reject) => {
+    fetchData();
     resolve("Fetch done!");
   });
 };
