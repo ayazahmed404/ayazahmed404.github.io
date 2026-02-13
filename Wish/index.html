@@ -12,16 +12,47 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     
     <style>
-      /* Making the wishText scrollable and setting the font */
+      /* Make wishText scrollable */
       .wish h5 {
-        max-height: 100px; /* Set the maximum height for the scrollable area */
-        overflow-y: scroll; /* Enable vertical scrolling */
-        padding-right: 10px; /* Optional: Adds some padding to show the scrollbar */
-
-        font-family: 'Roboto', sans-serif; /* Using Google Font 'Roboto' */
+        max-height: 150px; /* Maximum height for scrollable area */
+        overflow-y: auto; /* Allow scrolling */
+        padding-right: 10px; /* Optional: adds padding for scrollbar visibility */
+        
+        font-family: 'Roboto', sans-serif; /* Google Font */
         font-size: 18px; /* Adjust the font size */
-        line-height: 1.5; /* Set line height for readability */
+        line-height: 1.5; /* Better readability */
         color: #333; /* Text color */
+        white-space: pre-wrap; /* Ensures text wraps and breaks properly */
+      }
+
+      /* Styling the small button */
+      .small-btn {
+        background-color: #ff69b4; /* Pink background */
+        border: none;
+        color: white;
+        padding: 8px 15px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 14px;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+      }
+
+      .small-btn:hover {
+        background-color: #e05a97; /* Darker pink when hovered */
+      }
+
+      .nine {
+        margin-top: 20px;
+        text-align: center;
+      }
+
+      /* Smaller font size for idea-6 */
+      .idea-6 span {
+        font-size: 6px; /* Smaller font size */
+        color: #666; /* Optional: Lighter color for idea-6 text */
       }
     </style>
   </head>
@@ -66,14 +97,13 @@
         <img src="img/vector.jpg" alt="" class="girl-dp" id="imagePath" />
         <div class="wish">
           <h3 class="wish-hbd">Happy Valentine's Day Mera Bachaa</h3>
-          <h5 id="wishText">Umm jaaanuu</h5>
+          <h5 id="wishText">Umm jaaanuu. Here's a long heartfelt wish just for you. 🌷 You're amazing, special, and every day with you feels like a blessing. I love you to the moon and back! 💖</h5>
         </div>
       </div>
-      <!-- Removed the animation section (Balloons, SVGs, etc.) -->
+
+      <!-- Replacing previous text with just the button -->
       <div class="nine">
-        <p>Okay, now come back and tell me if you liked it.</p>
-        <p id="replay">Or click, if you want to watch it again.</p>
-        <p class="last-smile">:)</p>
+        <button class="small-btn" id="replay">Click Me</button>
       </div>
     </div>
 
